@@ -53,6 +53,9 @@ body {
   > div:last-child {
     grid-area: right;
   }
+  @include media-breakpoint-down(xs) { //it is activated when screen width < 576px
+    display: block;
+  }
 }
 .example-img {
   width: 100%;
